@@ -1,0 +1,309 @@
+
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   background: #333
+}
+
+.z{list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+   background:#333;
+   float:right;
+   width=60px;}
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+li:first-child {
+    border-left: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: rgb(152, 0, 0);
+}
+.basic-grey {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F7F7F7;
+    padding: 25px 15px 25px 10px;
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #E4E4E4;
+}
+.basic-grey h1 {
+    font-size: 25px;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom:1px solid #E4E4E4;
+    margin: -10px -15px 30px -10px;;
+    color: #888;
+}
+.basic-grey h1>span {
+    display: block;
+    font-size: 11px;
+}
+.basic-grey label {
+    display: block;
+    margin: 0px;
+}
+.basic-grey label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #888;
+}
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
+    border: 1px solid #DADADA;
+    color: #888;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height:15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.basic-grey input[type=submit]{
+  border:1px solid#db3b2b;
+  height:35px;
+  width:80px;
+  background:#db3b2b;
+  color:#fff;
+  }
+
+}
+
+.basic-grey select {
+       appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    line-height: 25px;
+}
+.basic-grey textarea{
+    height:100px;
+}
+.basic-grey .button {
+    background: #E27575;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+.basic-grey .button:hover {
+    background: #CF7A7A
+}
+</style>
+</head>
+<body>
+<img src="Untitled.png" align="left"><div id="example2"><div class="z">
+<ul style="float:right;list-style-type:none;">
+   <div class="z"> <li><a href="http://localhost/soas/start/soas/testmod6.html" >Account</a></li>
+    <li><a href="http://localhost/soas/start/soas/register.html" >Logout</a></li><li></li>
+  </ul></div>
+  <br><br><br>
+<ul>
+
+<li style="left: " ><a href="http://localhost/soas/start" >Home</a></li>
+
+<li ><a  class="active"<a href="../soas/testmod2.html" >Add Test</a></li>
+
+<li><a href="../soas/testmod7.html" >Delete Test</a></li>
+
+<li><a href="http://localhost/soas/start/soas/testmod3.html" >View Score</a></li>
+</ul><br><br><br><br><br><br></div>
+ <div class="basic-grey">
+ <h1> ADD TEST FORM:</h1>
+ <form action="addtestp.php" method="post">
+ Test Name:
+   <input type="text" name="tname"  cols="50"><br><br>
+   Enter the duration of the test:
+  <select name="selMin">
+            <option selected="selected" value="">Enter duration of the test</option>
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+        </select> <br><br>
+   Question 1:
+   <input type="text" name="question1"  cols="50"><br><br>
+   Option 1:
+    <input type="text" name="op11"><br><br>
+    Option 2:
+    <input type="text" name="op12"><br><br>
+    Option 3:
+    <input type="text" name="op13"><br><br>
+    Option 4:
+    <input type="text" name="op14"><br><br>
+    Correct option:
+    <input type="text" name="co1"><br><br>
+    Question 2:
+   <input type="text" name="question2" cols="50"><br><br>
+   Option 1:
+    <input type="text" name="op21"><br><br>
+    Option 2:
+    <input type="text" name="op22"><br><br>
+    Option 3:
+    <input type="text" name="op23"><br><br>
+    Option 4:
+    <input type="text" name="op24"><br><br>
+    Correct option:
+    <input type="text" name="co2"><br><br>
+    Question 3:
+   <input type="text" name="question3" rows="3" cols="20"><br><br>
+   Option 1:
+    <input type="text" name="op31"><br><br>
+    Option 2:
+    <input type="text" name="op32"><br><br>
+    Option 3:
+    <input type="text" name="op33"><br><br>
+    Option 4:
+    <input type="text" name="op34"><br><br>
+    Correct option:
+    <input type="text" name="co3"><br><br>
+    Question 4:
+   <input type="text" name="question4" cols="50"><br><br>
+   Option 1:
+    <input type="text" name="op41"><br><br>
+    Option 2:
+    <input type="text" name="op42"><br><br>
+    Option 3:
+    <input type="text" name="op43"><br><br>
+    Option 4:
+    <input type="text" name="op44"><br><br>
+    Correct option:
+    <input type="text" name="co4"><br><br>
+    Question 5:
+   <input type="text" name="question5"  cols="50"><br><br>
+   Option 1:
+    <input type="text" name="op51"><br><br>
+    Option 2:
+    <input type="text" name="op52"><br><br>
+    Option 3:
+    <input type="text" name="op53"><br><br>
+    Option 4:
+    <input type="text" name="op54"><br><br>
+    Correct option:
+    <input type="text" name="co5"><br><br>
+    Question 6:
+   <input type="text" name="question6"  cols="50"><br><br>
+   Option 1:
+    <input type="text" name="op61"><br><br>
+    Option 2:
+    <input type="text" name="op62"><br><br>
+    Option 3:
+    <input type="text" name="op63"><br><br>
+    Option 4:
+    <input type="text" name="op64"><br><br>
+    Correct option:
+    <input type="text" name="co6"><br><br>
+    Question 7:
+   <input type="text" name="question7"  cols="50"><br><br>
+   Option 1:
+    <input type="text" name="op71"><br><br>
+    Option 2:
+    <input type="text" name="op72"><br><br>
+    Option 3:
+    <input type="text" name="op73"><br><br>
+    Option 4:
+    <input type="text" name="op74"><br><br>
+    Correct option:
+    <input type="text" name="co7"><br><br>
+    Question 8:
+   <input type="text" name="question8"  cols="50"><br><br>
+   Option 1:
+    <input type="text" name="op81"><br><br>
+    Option 2:
+    <input type="text" name="op82"><br><br>
+    Option 3:
+    <input type="text" name="op83"><br><br>
+    Option 4:
+    <input type="text" name="op84"><br><br>
+    Correct option:
+    <input type="text" name="co8"><br><br>
+    Question 9:
+   <input type="text" name="question9"  cols="50"><br><br>
+   Option 1:
+    <input type="text" name="op91"><br><br>
+    Option 2:
+    <input type="text" name="op92"><br><br>
+    Option 3:
+    <input type="text" name="op93"><br><br>
+    Option 4:
+    <input type="text" name="op94"><br><br>
+    Correct option:
+    <input type="text" name="co9"><br><br>
+    Question 10:
+   <input type="text" name="question10"  cols="50"><br><br>
+   Option 1:
+    <input type="text" name="op101"><br><br>
+    Option 2:
+    <input type="text" name="op102"><br><br>
+    Option 3:
+    <input type="text" name="op103"><br><br>
+    Option 4:
+    <input type="text" name="op104"><br><br>
+    Correct option:
+    <input type="text" name="co10"><br><br>
+
+<input type="submit" value="Submit" name="submit">
+
+ </form>
+</div>
+</body>
+</html
